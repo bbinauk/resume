@@ -1,0 +1,45 @@
+.bbin_music>div {
+  position: relative;
+  margin: 22% auto;
+  width: 35%;
+  padding-top:40%;
+  border-top: 6px solid #333;
+  border-right: 2px solid #333;
+  border-left: 2px solid #333;
+  border-radius: 3px;
+  transform: skewY(-15deg)
+}
+.bbin_music>div::before, .bbin_music>div::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 35%;
+  padding-top:30%;
+  border-radius: 40%;
+  background-color: #333;
+  top:80%;
+}
+.bbin_music>div::before{
+  left: -35%;
+}
+.bbin_music>div::after{
+  left: 80%;
+}
+.play {
+  -webkit-animation: r 3s linear infinite;
+          animation: r 3s linear infinite;
+}
+@-webkit-keyframes r{
+  0% {
+    transform: rotate(0);
+  } 100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes r{
+  0% {
+    transform: rotate(0);
+  } 100% {
+    transform: rotate(360deg);
+  }
+}
